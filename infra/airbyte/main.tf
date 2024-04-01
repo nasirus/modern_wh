@@ -24,7 +24,7 @@ resource "airbyte_source_azure_blob_storage" "my_source_azureblobstorage" {
     ]
   }
   name          = "source_azure_storage_${var.azure_blob_storage_account_name}"
-  workspace_id  = var.workspace_id
+  workspace_id  = var.airbyte_workspace_id
 }
 
 resource "airbyte_destination_mssql" "my_destination_mssql" {
@@ -43,7 +43,7 @@ resource "airbyte_destination_mssql" "my_destination_mssql" {
     username = "sa"
   }
   name          = "destination_mssql"
-  workspace_id  = var.workspace_id
+  workspace_id  = var.airbyte_workspace_id
 }
 
 resource "airbyte_connection" "my_connection" {

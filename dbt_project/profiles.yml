@@ -1,0 +1,14 @@
+modern_dw:
+  target: modern_dw
+  outputs:
+    modern_dw:
+      type: sqlserver
+      driver: 'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
+      server: localhost
+      port: 1433
+      database: raw
+      schema: dbo
+      user: sa
+      password: yourStrong(!)Password
+      trust_cert: true
+      encrypt: false

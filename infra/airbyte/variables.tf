@@ -1,4 +1,4 @@
-variable "workspace_id" {
+variable "airbyte_workspace_id" {
     type = string
 }
 variable "azure_blob_storage_account_key" {

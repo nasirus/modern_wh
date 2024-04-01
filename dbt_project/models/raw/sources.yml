@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: raw
+    schema: raw
+    
+    tables:
+      - name: btcusdt_klines_with_indicators
+        identifier: btcusdt_klines_with_indicators
