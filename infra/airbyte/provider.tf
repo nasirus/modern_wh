@@ -4,7 +4,7 @@ terraform {
   required_providers {
     airbyte = {
       source = "airbytehq/airbyte"
-      version = "0.3.3"
+      version = "0.4.1"
     }
   }
 }
@@ -16,5 +16,5 @@ provider "airbyte" {
   password = "password"
   
   // if running locally (Airbyte OSS), include the server url to the airbyte-api-server
-  server_url = "http://localhost:8000"
+  server_url = "http://localhost:8006/v1"
 }
